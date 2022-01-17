@@ -4,10 +4,8 @@ export default function Home() {
     return (
         <div className="">
 
-            <h1>This is COOL Spotiyt THOMAS build!</h1>
 
-
-            <main>
+            <main className="bg-black h-screen overflow-hidden">
 
 
                 <Sidebar/>
