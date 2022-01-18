@@ -33,7 +33,6 @@ async function refreshAccessToken(token) {
 
 
 export default NextAuth({
-    secret: process.env.SECRET,
     providers: [
         // OAuth authentication providers
         SpotifyProvider({
@@ -44,6 +43,7 @@ export default NextAuth({
         }),
 // add more providers here
     ],
+    secret: process.env.JWT_SECRET,
 
     pages: {
         signIn: '/login'
